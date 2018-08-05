@@ -57,6 +57,7 @@ div#test {
 body {
   font-family: "メイリオ", Meiryo;
   color: #434343;
+  background-color: #f6f6f6;
 
 }
 
@@ -107,4 +108,30 @@ nav ul li:last-child {
   padding-right: 20px;
 }
 
+
+
+/* ========================================
+    ピックアップ
+========================================= */
+div#main_wrapper {
+  width: 960px;
+  height: auto;
+}
+
+div#top_pickup {
+  width: 582px;
+  height: 360px;
+  background-color: orange;
+}
+
+
+
+/* ========================================
+    ランキング
+========================================= */
+div#top_ranking {
+  width: 348px;
+  height: 360px;
+  background-color:  green;
+}
 
