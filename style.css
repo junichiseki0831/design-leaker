@@ -84,13 +84,27 @@ a:hover {
   margin: 0 auto;
 }
 
+h1 {
+  float: left;
+}
+
 nav {
   font-size: 18px;
+  float: right;
+  margin: 30px;
 }
 
 nav ul li {
   float: left;
   border-left: 1px dotted #434343;
+  padding-left: 20px;/*内側*/
+  margin-left: 20px;/*外側*/
+}
+
+/*最後のliのみ（擬似クラス）*/
+nav ul li:last-child {
+  border-right: 1px dotted #434343;
+  padding-right: 20px;
 }
 
 
