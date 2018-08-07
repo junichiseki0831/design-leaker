@@ -169,7 +169,17 @@ div#top_pickup dl dd {
 div#top_ranking {
   width: 348px;
   height: 360px;
-  background-color: green;
   float: left;
+}
+
+div#top_ranking h2 {
+  font-size: 18px;
+  font-weight: bold;
+  /*背景画像配置（王冠：繰り返しなし）*/
+  background: url(images/popular_icon.png) no-repeat;
+  padding-left: 37px;
+  border-bottom: 1px solid #dcdddf;
+  /*高さを変えることによってボックスの大きさを調整*/
+  height: 30px;
 }
 
