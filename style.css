@@ -183,3 +183,50 @@ div#top_ranking h2 {
   height: 30px;
 }
 
+div#top_ranking ul li {
+  width: 348px;
+  height: 55px;
+  border-bottom: 1px dotted #dcdddf;
+  margin-top:15px;
+  padding-bottom: 14px;
+}
+
+div#top_ranking ul li dl dt {
+  width: 89px;
+  height: 55px;
+  background-color: green;
+  float: left;
+  margin-right: 10px;
+}
+
+div#top_ranking ul li dl dd {
+  float: left;
+  width: auto;
+  height: 55px;
+}
+
+div#top_ranking ul li dl dd h3 a {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+span.ranking_tag {
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 0 3px;
+  ;
+}
+
+span.webdesign {
+  background-color: #f6ac4d
+}
+
+span.wordpress {
+  background-color: #e18c7c;
+}
+
+span.webmarketing {
+  background-color: #acd598;
+}
+
