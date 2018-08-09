@@ -191,12 +191,37 @@ div#top_ranking ul li {
   padding-bottom: 14px;
 }
 
+/*擬似クラスを作り不要な処理を打ち消す*/
+div#top_ranking ul li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0 ;
+}
+
 div#top_ranking ul li dl dt {
   width: 89px;
   height: 55px;
   background-color: green;
   float: left;
   margin-right: 10px;
+  position: relative;/*こちら親として基準に*/
+}
+
+span.ranking_number {
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #434343;
+  border: 1px solid #fff;
+  color: #fff;
+  width: 19px;
+  height: 19px;
+  /*inline要素（span）をblock要素に変更*/
+  display: inline-block;
+  text-align: center;
+  line-height: 19px;
+  position: absolute;/*こちらを子要素として*/
+  /*下記の場所に配置*/
+  top: 0;
+  left: 0;
 }
 
 div#top_ranking ul li dl dd {
