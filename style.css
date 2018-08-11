@@ -92,7 +92,7 @@ h1 {
 nav {
   font-size: 18px;
   float: right;
-  margin: 30px;
+  margin-top: 30px;
 }
 
 nav ul li {
@@ -271,6 +271,7 @@ div#top_category {
   background-color: #fff;
   padding: 10px;
   border: 10px solid #dcdddf;
+  margin-bottom: 30px;
 }
 
 div#top_category h3 {
@@ -285,9 +286,11 @@ div#top_category h3 {
 div#top_category ul li {
   font-size: 13px;
   margin-bottom: 19px;
+  /*fontsizeの13pxを一行分*/
   line-height: 1;
 }
 
+/*最後のmarginをなくす*/
 div#top_category ul li:last-child {
   margin-bottom: 0;
 }
@@ -300,8 +303,179 @@ div#top_category ul li:last-child {
 ========================================= */
 div#top_right {
   width: 650px;
-  height: 650px;
-  background-color: yellow;
+  height: auto;
   float: right;
   margin-top: 30px;
+}
+
+div#top_right h3 {
+  font-size: 22px;
+  font-weight: bold;
+  background: url(images/new_icon.png) no-repeat left 5px;
+  padding-left: 30px;
+}
+
+div#top_right ul#post_list li {
+  width: 650px;
+  height: 152px;
+  background-color: #fff;
+  border: 1px solid #dcdddf;
+  margin-bottom: 30px;
+}
+
+div#top_right ul#post_list li dl dt {
+  width: 247px;
+  height: 152px;
+  float: left;
+  margin-right: 20px;
+  position: relative;
+}
+
+div#top_right span.new_category_tag {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 10px;
+  width: auto;
+  height: 34px;
+  background-color: rgba(246,172,77,0.9);
+  display: inline-block;
+  color: #fff;
+  line-height: 34px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+div#top_right dl dd {
+  padding: 20px 20px 0 0;
+}
+
+div#top_right h4 a {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+span.new_date {
+  color: #dcdddf;
+  font-size: 12px;
+  background: url(images/new_date.png) no-repeat left 2px;
+  padding-left: 18px;
+}
+
+span.new_tag {
+  color: #dcdddf;
+  font-size: 12px;
+  background: url(images/tag.png) no-repeat left 2px;
+  padding-left: 18px;
+  margin-left: 18px;
+}
+
+div#top_right p {
+  font-size: 13px;
+  /*行間*/
+  line-height: 21px;
+  margin-top: 10px;
+}
+
+div#top_right p a {
+  color: #f6ac4d;
+  text-decoration: underline;
+}
+
+div#pagenation {
+  width: auto;
+  height: 34px;
+  float: right;
+}
+
+div#pagenation ul li {
+  width: auto;
+  height: 32px;
+  background-color: #fff;
+  border: 1px solid #dcdddf;
+  float: left;
+  margin-left: 10px;
+}
+
+/*aタグに設定をすることでリンク領域が狭くならない*/
+div#pagenation ul li a {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 32px;
+  padding: 0 8px;
+  display: inline-block;
+}
+
+
+/* ========================================
+    フッター
+========================================= */
+footer {
+  width: 100%;
+  height: 140px;
+  background-color: #fff;
+  border-top: 1px solid #dcdddf;
+  padding: 20px 0;
+  margin-top: 60px;
+}
+
+div#footer_inner {
+  width: 960px;
+  height: auto;
+  margin: 0 auto;
+}
+
+div#footer_inner dl {
+  float: left;
+}
+
+div#footer_inner dt {
+  width: 218px;
+  height: 52px;
+  margin-bottom: 20px;
+}
+
+div#footer_inner dd {
+  font-size: 13px;
+  line-height: 21px;
+}
+
+div#contact {
+  width: 374px;
+  height: auto;
+  float: right;
+}
+
+div#contact h4 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+div#contact h4 span {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+div#contact form textarea {
+  width: 372px;
+  height: 35px;
+  margin: 10px 0;
+  border: 1px solid #dcdddf;
+}
+
+div#contact form input {
+  width: 127px;
+  height: 30px;
+  background-color: #7e7e7e;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  float: right;
+}
+
+div#contact form input:hover {
+  /*不透明度を80%まで下げる*/
+  opacity: 0.8;
+  cursor: pointer;
 }
